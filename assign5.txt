@@ -1,0 +1,39 @@
+# Ninad Kulkarni 1216529600
+# Class ID: 40130
+# Homework 5
+
+1) a. num  = 0x10010008
+      main = 0x00400200
+      top  = 0x00400204
+      end  = 0x00400220
+      func = 0x00400220
+
+   b. lui  - Base Addressing
+      lw   - Base Addressing
+      beq  - PC Relative Addressing
+      jal  - Psuedo Direct Addressing
+      add  - Register Addressing
+      andi - Immidiate Addressing
+      j    - Psuedo Direct Addressing
+      bne  - PC Relative Addressing
+      sll  - Register Addressing
+      jr   - Psuedo Direct Addressing
+
+   c. 0x3C081001
+      0x8D09FFFC
+      0x12120005
+      0x0C400220
+      0x02288020
+      0x30100001
+      0x08400204
+      0x1600FFF9
+      0x00091100
+      0x03E00008
+
+2) addi $t1, $0, 20
+   and $t2, $0, $0
+   label: add $t2, $t2, $t1
+   sll $t1, $t1, 1
+   bne $t1, $0, label
+   lui $t0, 0x1001
+   sw $t1, 0($t0)
